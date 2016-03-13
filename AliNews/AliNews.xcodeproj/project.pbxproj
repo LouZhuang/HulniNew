@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBD637EF1AD41D8281BDD8E /* libPods-AliNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190054576CF7AF133D843CCB /* libPods-AliNews.a */; };
 		58D832B51C95B4B4002614B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832B41C95B4B4002614B7 /* main.m */; };
 		58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832B71C95B4B4002614B7 /* AppDelegate.m */; };
-		58D832BB1C95B4B4002614B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832BA1C95B4B4002614B7 /* ViewController.m */; };
-		58D832BE1C95B4B4002614B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D832BC1C95B4B4002614B7 /* Main.storyboard */; };
 		58D832C01C95B4B4002614B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D832BF1C95B4B4002614B7 /* Assets.xcassets */; };
 		58D832C31C95B4B4002614B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D832C11C95B4B4002614B7 /* LaunchScreen.storyboard */; };
+		58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832CC1C95B835002614B7 /* NewsTableViewController.m */; };
+		58D832CF1C95B85B002614B7 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D832CE1C95B85B002614B7 /* News.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190054576CF7AF133D843CCB /* libPods-AliNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDEF20CE6054DC583123DA8 /* Pods-AliNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliNews/Pods-AliNews.release.xcconfig"; sourceTree = "<group>"; };
 		58D832B01C95B4B4002614B7 /* AliNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D832B41C95B4B4002614B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58D832B61C95B4B4002614B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58D832B71C95B4B4002614B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		58D832B91C95B4B4002614B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		58D832BA1C95B4B4002614B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		58D832BD1C95B4B4002614B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D832BF1C95B4B4002614B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D832C21C95B4B4002614B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D832C41C95B4B4002614B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D832CB1C95B835002614B7 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		58D832CC1C95B835002614B7 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		58D832CE1C95B85B002614B7 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		76019CAE1B72ED0C63EC9560 /* Pods-AliNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliNews/Pods-AliNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBD637EF1AD41D8281BDD8E /* libPods-AliNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BED59A10E86253D8B609CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190054576CF7AF133D843CCB /* libPods-AliNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		479C71AE098F287B250E9443 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76019CAE1B72ED0C63EC9560 /* Pods-AliNews.debug.xcconfig */,
+				4CDEF20CE6054DC583123DA8 /* Pods-AliNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58C313C41C95B9C800DBFD94 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		58D832A71C95B4B4002614B7 = {
 			isa = PBXGroup;
 			children = (
 				58D832B21C95B4B4002614B7 /* AliNews */,
 				58D832B11C95B4B4002614B7 /* Products */,
+				479C71AE098F287B250E9443 /* Pods */,
+				09BED59A10E86253D8B609CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +89,10 @@
 		58D832B21C95B4B4002614B7 /* AliNews */ = {
 			isa = PBXGroup;
 			children = (
+				58C313C41C95B9C800DBFD94 /* Tools */,
+				58D832CA1C95B818002614B7 /* Class */,
 				58D832B61C95B4B4002614B7 /* AppDelegate.h */,
 				58D832B71C95B4B4002614B7 /* AppDelegate.m */,
-				58D832B91C95B4B4002614B7 /* ViewController.h */,
-				58D832BA1C95B4B4002614B7 /* ViewController.m */,
-				58D832BC1C95B4B4002614B7 /* Main.storyboard */,
 				58D832BF1C95B4B4002614B7 /* Assets.xcassets */,
 				58D832C11C95B4B4002614B7 /* LaunchScreen.storyboard */,
 				58D832C41C95B4B4002614B7 /* Info.plist */,
@@ -79,6 +109,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		58D832CA1C95B818002614B7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				58D832CE1C95B85B002614B7 /* News.storyboard */,
+				58D832CB1C95B835002614B7 /* NewsTableViewController.h */,
+				58D832CC1C95B835002614B7 /* NewsTableViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58D832C71C95B4B4002614B7 /* Build configuration list for PBXNativeTarget "AliNews" */;
 			buildPhases = (
+				998B8F0640BEBC751667E44B /* Check Pods Manifest.lock */,
 				58D832AC1C95B4B4002614B7 /* Sources */,
 				58D832AD1C95B4B4002614B7 /* Frameworks */,
 				58D832AE1C95B4B4002614B7 /* Resources */,
+				425355DDF819E0AE21242012 /* Embed Pods Frameworks */,
+				662D06408BD2485A0E77EE86 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,19 +181,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D832C31C95B4B4002614B7 /* LaunchScreen.storyboard in Resources */,
+				58D832CF1C95B85B002614B7 /* News.storyboard in Resources */,
 				58D832C01C95B4B4002614B7 /* Assets.xcassets in Resources */,
-				58D832BE1C95B4B4002614B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		425355DDF819E0AE21242012 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliNews/Pods-AliNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662D06408BD2485A0E77EE86 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliNews/Pods-AliNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998B8F0640BEBC751667E44B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58D832AC1C95B4B4002614B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D832BB1C95B4B4002614B7 /* ViewController.m in Sources */,
+				58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */,
 				58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */,
 				58D832B51C95B4B4002614B7 /* main.m in Sources */,
 			);
@@ -159,14 +250,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		58D832BC1C95B4B4002614B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58D832BD1C95B4B4002614B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58D832C11C95B4B4002614B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -262,6 +345,7 @@
 		};
 		58D832C81C95B4B4002614B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76019CAE1B72ED0C63EC9560 /* Pods-AliNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AliNews/Info.plist;
@@ -273,6 +357,7 @@
 		};
 		58D832C91C95B4B4002614B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDEF20CE6054DC583123DA8 /* Pods-AliNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AliNews/Info.plist;
@@ -301,6 +386,7 @@
 				58D832C91C95B4B4002614B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
