@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BBD637EF1AD41D8281BDD8E /* libPods-AliNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190054576CF7AF133D843CCB /* libPods-AliNews.a */; };
+		58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313C61C95BA8000DBFD94 /* NetWorkTools.m */; };
 		58D832B51C95B4B4002614B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832B41C95B4B4002614B7 /* main.m */; };
 		58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832B71C95B4B4002614B7 /* AppDelegate.m */; };
 		58D832C01C95B4B4002614B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D832BF1C95B4B4002614B7 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		190054576CF7AF133D843CCB /* libPods-AliNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDEF20CE6054DC583123DA8 /* Pods-AliNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliNews/Pods-AliNews.release.xcconfig"; sourceTree = "<group>"; };
+		58C313C51C95BA8000DBFD94 /* NetWorkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
+		58C313C61C95BA8000DBFD94 /* NetWorkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
 		58D832B01C95B4B4002614B7 /* AliNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D832B41C95B4B4002614B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58D832B61C95B4B4002614B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 		58C313C41C95B9C800DBFD94 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				58C313C51C95BA8000DBFD94 /* NetWorkTools.h */,
+				58C313C61C95BA8000DBFD94 /* NetWorkTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */,
 				58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */,
 				58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */,
 				58D832B51C95B4B4002614B7 /* main.m in Sources */,
