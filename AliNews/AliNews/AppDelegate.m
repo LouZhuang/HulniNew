@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworkActivityIndicatorManager.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //设置缓存
+    NSURLCache *cache = [[NSURLCache alloc]initWithMemoryCapacity:4 * 1024 *1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:cache];
+    //设置菊花  一旦设置，后续AFN做网络请求的话，都会显示小菊花
+    //如果使用SDWebImage 做网络请求，不会显示指示器
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     return YES;
 }
 

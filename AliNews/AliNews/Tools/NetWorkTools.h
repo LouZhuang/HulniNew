@@ -6,9 +6,9 @@
 //  Copyright © 2016年 黄礼潮. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AFHTTPSessionManager.h"
 
-@interface NetWorkTools : NSObject
+@interface NetWorkTools : AFHTTPSessionManager
 
 +(instancetype)shardTools;
 
