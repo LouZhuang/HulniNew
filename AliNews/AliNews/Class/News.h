@@ -27,6 +27,6 @@
 
 +(instancetype)newsWithDict:(NSDictionary *)dict;
 
-+(void)loadNewsListWithString:(NSString *)urlString;
++(void)loadNewsListWithString:(NSString *)urlString finished:(void(^)(NSArray *newsList))finished;
 
 @end

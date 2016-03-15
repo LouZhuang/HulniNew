@@ -11,6 +11,7 @@
 		58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313C61C95BA8000DBFD94 /* NetWorkTools.m */; };
 		58C313CA1C95BDF700DBFD94 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313C91C95BDF700DBFD94 /* News.m */; };
 		58C313CE1C95C31B00DBFD94 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313CD1C95C31B00DBFD94 /* NSArray+Log.m */; };
+		58CB1EB91C9849A600CFDC2D /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB1EB81C9849A600CFDC2D /* NewsCell.m */; };
 		58D832B51C95B4B4002614B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832B41C95B4B4002614B7 /* main.m */; };
 		58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832B71C95B4B4002614B7 /* AppDelegate.m */; };
 		58D832C01C95B4B4002614B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D832BF1C95B4B4002614B7 /* Assets.xcassets */; };
@@ -28,6 +29,8 @@
 		58C313C91C95BDF700DBFD94 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		58C313CC1C95C31B00DBFD94 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		58C313CD1C95C31B00DBFD94 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		58CB1EB71C9849A600CFDC2D /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		58CB1EB81C9849A600CFDC2D /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		58D832B01C95B4B4002614B7 /* AliNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D832B41C95B4B4002614B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58D832B61C95B4B4002614B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				58D832CC1C95B835002614B7 /* NewsTableViewController.m */,
 				58C313C81C95BDF700DBFD94 /* News.h */,
 				58C313C91C95BDF700DBFD94 /* News.m */,
+				58CB1EB71C9849A600CFDC2D /* NewsCell.h */,
+				58CB1EB81C9849A600CFDC2D /* NewsCell.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				58C313CA1C95BDF700DBFD94 /* News.m in Sources */,
 				58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */,
 				58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */,
+				58CB1EB91C9849A600CFDC2D /* NewsCell.m in Sources */,
 				58C313CE1C95C31B00DBFD94 /* NSArray+Log.m in Sources */,
 				58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */,
 				58D832B51C95B4B4002614B7 /* main.m in Sources */,

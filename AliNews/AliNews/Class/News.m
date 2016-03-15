@@ -77,7 +77,7 @@ const char * kHulni = "kHulni";
 }
 
 
-+(void)loadNewsListWithString:(NSString *)urlString{
++(void)loadNewsListWithString:(NSString *)urlString finished:(void (^)(NSArray *))finished{
 
     [[[NetWorkTools shardTools] GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * responseObject) {
         
@@ -92,7 +92,11 @@ const char * kHulni = "kHulni";
         for (NSDictionary * obj in array) {
             [arrayM addObject:[self newsWithDict:obj]];
         }
-        NSLog(@"%@",arrayM);
+    //    NSLog(@"%@",arrayM);
+        
+        //这个方法是异步的 数据解析之后完成回调
+        finished(arrayM);
+        
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
