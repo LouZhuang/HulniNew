@@ -19,7 +19,10 @@
 		58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832CC1C95B835002614B7 /* NewsTableViewController.m */; };
 		58D832CF1C95B85B002614B7 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D832CE1C95B85B002614B7 /* News.storyboard */; };
 		58F4C31D1C9AF6720042AA9B /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4C31C1C9AF6720042AA9B /* Channel.m */; };
-		58F4C3201C9AF6AF0042AA9B /* NSObject+DictModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4C31F1C9AF6AF0042AA9B /* NSObject+DictModel.m */; };
+		58F4C3201C9AF6AF0042AA9B /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4C31F1C9AF6AF0042AA9B /* NSObject+Extension.m */; };
+		58F4C3221C9AFEC50042AA9B /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 58F4C3211C9AFEC50042AA9B /* topic_news.json */; };
+		58F4C3241C9B0AEE0042AA9B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F4C3231C9B0AEE0042AA9B /* Home.storyboard */; };
+		58F4C3271C9B0B050042AA9B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4C3261C9B0B050042AA9B /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +48,12 @@
 		58D832CE1C95B85B002614B7 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		58F4C31B1C9AF6720042AA9B /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
 		58F4C31C1C9AF6720042AA9B /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
-		58F4C31E1C9AF6AF0042AA9B /* NSObject+DictModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DictModel.h"; sourceTree = "<group>"; };
-		58F4C31F1C9AF6AF0042AA9B /* NSObject+DictModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DictModel.m"; sourceTree = "<group>"; };
+		58F4C31E1C9AF6AF0042AA9B /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		58F4C31F1C9AF6AF0042AA9B /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		58F4C3211C9AFEC50042AA9B /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		58F4C3231C9B0AEE0042AA9B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		58F4C3251C9B0B050042AA9B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		58F4C3261C9B0B050042AA9B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		76019CAE1B72ED0C63EC9560 /* Pods-AliNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliNews/Pods-AliNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +91,8 @@
 			children = (
 				58C313C51C95BA8000DBFD94 /* NetWorkTools.h */,
 				58C313C61C95BA8000DBFD94 /* NetWorkTools.m */,
-				58F4C31E1C9AF6AF0042AA9B /* NSObject+DictModel.h */,
-				58F4C31F1C9AF6AF0042AA9B /* NSObject+DictModel.m */,
+				58F4C31E1C9AF6AF0042AA9B /* NSObject+Extension.h */,
+				58F4C31F1C9AF6AF0042AA9B /* NSObject+Extension.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -159,8 +166,12 @@
 		58F4C31A1C9AF6660042AA9B /* Channel */ = {
 			isa = PBXGroup;
 			children = (
+				58F4C3211C9AFEC50042AA9B /* topic_news.json */,
 				58F4C31B1C9AF6720042AA9B /* Channel.h */,
 				58F4C31C1C9AF6720042AA9B /* Channel.m */,
+				58F4C3231C9B0AEE0042AA9B /* Home.storyboard */,
+				58F4C3251C9B0B050042AA9B /* HomeViewController.h */,
+				58F4C3261C9B0B050042AA9B /* HomeViewController.m */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -227,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D832C31C95B4B4002614B7 /* LaunchScreen.storyboard in Resources */,
+				58F4C3241C9B0AEE0042AA9B /* Home.storyboard in Resources */,
 				58D832CF1C95B85B002614B7 /* News.storyboard in Resources */,
+				58F4C3221C9AFEC50042AA9B /* topic_news.json in Resources */,
 				58D832C01C95B4B4002614B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +303,11 @@
 				58C313CA1C95BDF700DBFD94 /* News.m in Sources */,
 				58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */,
 				58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */,
+				58F4C3271C9B0B050042AA9B /* HomeViewController.m in Sources */,
 				58CB1EB91C9849A600CFDC2D /* NewsCell.m in Sources */,
 				58C313CE1C95C31B00DBFD94 /* NSArray+Log.m in Sources */,
 				58F4C31D1C9AF6720042AA9B /* Channel.m in Sources */,
-				58F4C3201C9AF6AF0042AA9B /* NSObject+DictModel.m in Sources */,
+				58F4C3201C9AF6AF0042AA9B /* NSObject+Extension.m in Sources */,
 				58D832B81C95B4B4002614B7 /* AppDelegate.m in Sources */,
 				58D832B51C95B4B4002614B7 /* main.m in Sources */,
 			);

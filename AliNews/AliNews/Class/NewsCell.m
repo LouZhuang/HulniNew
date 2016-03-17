@@ -46,6 +46,10 @@
 
     if (news.imgextra.count == 2) {
         return @"imagesCell";
+    } else if (news.isBig){
+     
+        return @"imageBigCell";
+    
     }
 
     return @"NewsCell";

@@ -29,7 +29,7 @@
     self.tableView.estimatedRowHeight = 80;
     self.tableView.rowHeight  = UITableViewAutomaticDimension;
    // __weak typeof(self) weakSelf = self;
-  [News loadNewsListWithString:@"T1348647853363/0-20.html"finished:^(NSArray *newsList) {
+  [News loadNewsListWithString:@"T1348649079062/0-20.html"finished:^(NSArray *newsList) {
       _newsList = newsList;
       
       [self.tableView reloadData];

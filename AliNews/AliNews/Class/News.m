@@ -8,10 +8,18 @@
 
 #import "News.h"
 #import "NetWorkTools.h"
-#import "NSObject+DictModel.h"
+#import "NSObject+Extension.h"
 
 @implementation News
 
+-(NSString *)description{
+
+    NSArray *property = [self.class loadArrayData];
+    NSDictionary *dict = [self dictionaryWithValuesForKeys:property];
+    
+    return [NSString stringWithFormat:@"<%@: %p>,%@",self.class,self,dict];
+
+}
 
 +(void)loadNewsListWithString:(NSString *)urlString finished:(void (^)(NSArray *))finished{
 

@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (DictModel)
+@interface NSObject (Extension)
 
 +(NSArray *)loadArrayData;
+
 +(instancetype)objectWithDict:(NSDictionary *)dict;
 @end

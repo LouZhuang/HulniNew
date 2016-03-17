@@ -25,6 +25,8 @@
  */
 @property (nonatomic, copy) NSString *imgsrc;
 
+@property(nonatomic,assign,getter=isBig) BOOL imgType;
+
 @property(nonatomic,strong) NSArray *imgextra;
 
 

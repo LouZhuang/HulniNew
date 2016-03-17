@@ -10,4 +10,9 @@
 
 @interface Channel : NSObject
 
+@property(nonatomic, copy)NSString *tid;
+@property(nonatomic,copy)NSString *tname;
+
++(NSArray *)channelsList;
+
 @end

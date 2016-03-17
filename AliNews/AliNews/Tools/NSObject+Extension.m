@@ -6,10 +6,10 @@
 //  Copyright © 2016年 黄礼潮. All rights reserved.
 //
 
-#import "NSObject+DictModel.h"
+#import "NSObject+Extension.h"
 #import <objc/runtime.h>
 const char * kHulni = "kHulni";
-@implementation NSObject (DictModel)
+@implementation NSObject (Extension)
 
 +(instancetype)objectWithDict:(NSDictionary *)dict{
     
