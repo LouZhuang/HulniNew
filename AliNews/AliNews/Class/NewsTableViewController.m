@@ -24,6 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //计算行高
+    self.tableView.estimatedRowHeight = 80;
+    self.tableView.rowHeight  = UITableViewAutomaticDimension;
    // __weak typeof(self) weakSelf = self;
   [News loadNewsListWithString:@"T1348647853363/0-20.html"finished:^(NSArray *newsList) {
       _newsList = newsList;
@@ -51,9 +55,15 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
     
-    cell.news = _newsList[indexPath.row];
+    News * n = _newsList[indexPath.row];
+    
+    NSString *ID = [NewsCell cellIndefiner:n];
+    
+    
+    NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    
+    cell.news = n;
     
     return cell;
 }

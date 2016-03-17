@@ -8,6 +8,7 @@
 
 #import "NewsCell.h"
 #import "News.h"
+#import <YYWebImage/YYWebImage.h>
 
 @interface NewsCell ()
 
@@ -15,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *digsrcLabel;
 @property (weak, nonatomic) IBOutlet UILabel *replyLabel;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageExtras;
 
 @end
 
@@ -27,6 +29,26 @@
     self.titleLabel.text = news.title;
     self.digsrcLabel.text = news.digest;
     self.replyLabel.text = [NSString stringWithFormat:@"%d",news.replyCount];
+    [self.iconView setYy_imageURL:[NSURL URLWithString:news.imgsrc]];
+    
+    if (news.imgextra.count == 2) {
+        int index = 0;
+        for (UIImageView *iv in self.imageExtras) {
+           
+            [iv setYy_imageURL:[NSURL URLWithString:news.imgextra[index][@"imgsrc"]]];
+            index++;
+        }
+    }
+
+}
+
++(NSString *)cellIndefiner:(News *)news{
+
+    if (news.imgextra.count == 2) {
+        return @"imagesCell";
+    }
+
+    return @"NewsCell";
 
 }
 

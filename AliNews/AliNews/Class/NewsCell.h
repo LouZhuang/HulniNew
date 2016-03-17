@@ -12,4 +12,7 @@
 
 @property(nonatomic,copy)News *news;
 
+//返回怎么的cell
++(NSString *)cellIndefiner:(News *)news;
+
 @end

@@ -25,7 +25,9 @@
  */
 @property (nonatomic, copy) NSString *imgsrc;
 
-+(instancetype)newsWithDict:(NSDictionary *)dict;
+@property(nonatomic,strong) NSArray *imgextra;
+
+
 
 +(void)loadNewsListWithString:(NSString *)urlString finished:(void(^)(NSArray *newsList))finished;
 
