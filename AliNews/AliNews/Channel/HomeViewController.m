@@ -8,8 +8,11 @@
 
 #import "HomeViewController.h"
 #import "Channel.h"
+#import "ChannelLabel.h"
 
 @interface HomeViewController ()
+@property(nonatomic,strong)NSArray * channelList;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -17,22 +20,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",[Channel channelsList]);
+    
+    //往scrollView上添加Label
+    [self addLabel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)addLabel{
+
+    //iOS7 之后 nav + scrollView 默认会向下调整64 个间距点  使表格能够“穿透效果”。
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    //设置label 的间距及它的大小
+    
+    CGFloat margin = 8.0;
+    
+    CGFloat x = 8.0;
+    
+    CGFloat h = self.scrollView.bounds.size.height;
+    
+    for (Channel * channel in self.channelList) {
+        
+        ChannelLabel *label = [ChannelLabel labelWithTitle:channel.tname];
+        
+        
+        label.frame = CGRectMake(x, 0, label.bounds.size.width, h);
+        
+        x += label.bounds.size.width ;
+        
+        [self.scrollView addSubview:label];
+    }
+    self.scrollView.contentSize = CGSizeMake(x + margin, h);
+
 }
 
-/*
-#pragma mark - Navigation
+-(NSArray *)channelList{
+    
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (_channelList == nil) {
+        
+        _channelList = [Channel channelsList];
+    }
+
+    return _channelList;
 }
-*/
 
 @end

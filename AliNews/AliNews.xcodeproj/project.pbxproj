@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BBD637EF1AD41D8281BDD8E /* libPods-AliNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190054576CF7AF133D843CCB /* libPods-AliNews.a */; };
+		58B7802C1C9BC4BD00A723E3 /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B7802B1C9BC4BD00A723E3 /* ChannelLabel.m */; };
 		58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313C61C95BA8000DBFD94 /* NetWorkTools.m */; };
 		58C313CA1C95BDF700DBFD94 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313C91C95BDF700DBFD94 /* News.m */; };
 		58C313CE1C95C31B00DBFD94 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C313CD1C95C31B00DBFD94 /* NSArray+Log.m */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		190054576CF7AF133D843CCB /* libPods-AliNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDEF20CE6054DC583123DA8 /* Pods-AliNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliNews/Pods-AliNews.release.xcconfig"; sourceTree = "<group>"; };
+		58B7802A1C9BC4BD00A723E3 /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
+		58B7802B1C9BC4BD00A723E3 /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
 		58C313C51C95BA8000DBFD94 /* NetWorkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
 		58C313C61C95BA8000DBFD94 /* NetWorkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
 		58C313C81C95BDF700DBFD94 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				58F4C3211C9AFEC50042AA9B /* topic_news.json */,
 				58F4C31B1C9AF6720042AA9B /* Channel.h */,
 				58F4C31C1C9AF6720042AA9B /* Channel.m */,
+				58B7802A1C9BC4BD00A723E3 /* ChannelLabel.h */,
+				58B7802B1C9BC4BD00A723E3 /* ChannelLabel.m */,
 				58F4C3231C9B0AEE0042AA9B /* Home.storyboard */,
 				58F4C3251C9B0B050042AA9B /* HomeViewController.h */,
 				58F4C3261C9B0B050042AA9B /* HomeViewController.m */,
@@ -304,6 +309,7 @@
 				58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */,
 				58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */,
 				58F4C3271C9B0B050042AA9B /* HomeViewController.m in Sources */,
+				58B7802C1C9BC4BD00A723E3 /* ChannelLabel.m in Sources */,
 				58CB1EB91C9849A600CFDC2D /* NewsCell.m in Sources */,
 				58C313CE1C95C31B00DBFD94 /* NSArray+Log.m in Sources */,
 				58F4C31D1C9AF6720042AA9B /* Channel.m in Sources */,
