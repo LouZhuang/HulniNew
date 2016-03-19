@@ -23,7 +23,6 @@
     [label sizeToFit];
     
     label.font = [UIFont systemFontOfSize: 14];
-    
 
 
     return  label;

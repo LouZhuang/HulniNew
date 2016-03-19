@@ -25,10 +25,10 @@
 
     [[[NetWorkTools shardTools] GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * responseObject) {
         
-        NSLog(@"%@",responseObject.keyEnumerator.nextObject);
+     //   NSLog(@"%@",responseObject.keyEnumerator.nextObject);
         //responseObject.keyEnumerator.nextObject 通过这个属性值，拿到字典中的第一个数组中的值
         NSArray *array = responseObject[responseObject.keyEnumerator.nextObject];
-        NSLog(@"%@",array);
+    //    NSLog(@"%@",array);
         //拿到数组之后，然后字典转模型...
         //Capacity这是一个容器，会自动递增，不会崩溃，每次递增10个长度来存储数据
         //[NSMutableArray array ] 这个会临时开辟空间

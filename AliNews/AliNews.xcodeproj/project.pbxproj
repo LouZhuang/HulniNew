@@ -19,6 +19,7 @@
 		58D832C31C95B4B4002614B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D832C11C95B4B4002614B7 /* LaunchScreen.storyboard */; };
 		58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D832CC1C95B835002614B7 /* NewsTableViewController.m */; };
 		58D832CF1C95B85B002614B7 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D832CE1C95B85B002614B7 /* News.storyboard */; };
+		58E92E891C9D357B00EFEC70 /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E92E881C9D357B00EFEC70 /* ChannelCell.m */; };
 		58F4C31D1C9AF6720042AA9B /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4C31C1C9AF6720042AA9B /* Channel.m */; };
 		58F4C3201C9AF6AF0042AA9B /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4C31F1C9AF6AF0042AA9B /* NSObject+Extension.m */; };
 		58F4C3221C9AFEC50042AA9B /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 58F4C3211C9AFEC50042AA9B /* topic_news.json */; };
@@ -49,6 +50,8 @@
 		58D832CB1C95B835002614B7 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		58D832CC1C95B835002614B7 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		58D832CE1C95B85B002614B7 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		58E92E871C9D357B00EFEC70 /* ChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
+		58E92E881C9D357B00EFEC70 /* ChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCell.m; sourceTree = "<group>"; };
 		58F4C31B1C9AF6720042AA9B /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
 		58F4C31C1C9AF6720042AA9B /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
 		58F4C31E1C9AF6AF0042AA9B /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				58B7802A1C9BC4BD00A723E3 /* ChannelLabel.h */,
 				58B7802B1C9BC4BD00A723E3 /* ChannelLabel.m */,
 				58F4C3231C9B0AEE0042AA9B /* Home.storyboard */,
+				58E92E871C9D357B00EFEC70 /* ChannelCell.h */,
+				58E92E881C9D357B00EFEC70 /* ChannelCell.m */,
 				58F4C3251C9B0B050042AA9B /* HomeViewController.h */,
 				58F4C3261C9B0B050042AA9B /* HomeViewController.m */,
 			);
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58C313CA1C95BDF700DBFD94 /* News.m in Sources */,
+				58E92E891C9D357B00EFEC70 /* ChannelCell.m in Sources */,
 				58C313C71C95BA8000DBFD94 /* NetWorkTools.m in Sources */,
 				58D832CD1C95B835002614B7 /* NewsTableViewController.m in Sources */,
 				58F4C3271C9B0B050042AA9B /* HomeViewController.m in Sources */,

@@ -10,9 +10,11 @@
 #import "Channel.h"
 #import "ChannelLabel.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property(nonatomic,strong)NSArray * channelList;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
 
 @end
 
@@ -23,7 +25,43 @@
     
     //往scrollView上添加Label
     [self addLabel];
+    
+
 }
+//子视图将要布局，还没开始
+-(void)viewDidLayoutSubviews{
+
+    [self setUpLayout];
+
+}
+
+-(void)setUpLayout{
+    self.layout.itemSize = self.collectionView.bounds.size;
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.collectionView.pagingEnabled = YES;
+    self.layout.minimumInteritemSpacing = 0;
+    self.layout.minimumLineSpacing = 0;
+    
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+}
+
+/// MARK --数据源方法
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+
+    return self.channelList.count;
+
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ChannelCell" forIndexPath:indexPath];
+  //  cell.backgroundColor = [UIColor redColor];
+    
+    
+    return cell;
+
+}
+
 
 -(void)addLabel{
 

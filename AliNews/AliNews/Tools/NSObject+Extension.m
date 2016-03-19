@@ -36,7 +36,7 @@ const char * kHulni = "kHulni";
     if (plist != nil) {
         return plist;
     }
-    NSLog(@"%@",plist);
+  //  NSLog(@"%@",plist);
 
     unsigned int count;
 
@@ -56,7 +56,7 @@ const char * kHulni = "kHulni";
         [arrayM addObject:[NSString stringWithUTF8String:cName]];
     }
 
-    NSLog(@"%@",arrayM);
+  //  NSLog(@"%@",arrayM);
 
     free(list);
     //设置关联对象，是运用时使用最多的  获取关联对象  提高性能，不用每次进来判断对象中是否有该属性
