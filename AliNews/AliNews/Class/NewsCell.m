@@ -48,7 +48,7 @@
         return @"imagesCell";
     } else if (news.isBig){
      
-        return @"imageBigCell";
+        return @"bigImageCell";
     
     }
 

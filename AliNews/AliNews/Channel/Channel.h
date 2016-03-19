@@ -12,6 +12,7 @@
 
 @property(nonatomic, copy)NSString *tid;
 @property(nonatomic,copy)NSString *tname;
+@property(nonatomic,strong)NSString *urlString;
 
 +(NSArray *)channelsList;
 

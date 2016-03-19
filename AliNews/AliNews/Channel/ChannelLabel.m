@@ -18,6 +18,7 @@
     label.textAlignment = NSTextAlignmentCenter;
     
     label.text = titlle;
+    label.numberOfLines = 0;
     
     
     [label sizeToFit];

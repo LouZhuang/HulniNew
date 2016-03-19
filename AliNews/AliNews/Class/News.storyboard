@@ -90,34 +90,32 @@
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-QM-M5h">
-                                            <rect key="frame" x="8" y="34" width="584" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="sFh-dK-fPv"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-di-44r">
                                             <rect key="frame" x="561" y="156" width="31" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-QM-M5h">
+                                            <rect key="frame" x="8" y="34" width="584" height="100"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ZEA-QM-M5h" firstAttribute="top" secondItem="mlX-7x-Zkz" secondAttribute="bottom" constant="8" id="58V-2j-shR"/>
                                         <constraint firstItem="mlX-7x-Zkz" firstAttribute="leading" secondItem="QD3-lu-Juf" secondAttribute="leadingMargin" id="Hw0-5e-Uz4"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="eRg-di-44r" secondAttribute="bottom" constant="1" id="Ld1-AQ-IRA"/>
+                                        <constraint firstItem="3D4-m9-yop" firstAttribute="leading" secondItem="QD3-lu-Juf" secondAttribute="leadingMargin" id="HzC-Cl-R1Z"/>
+                                        <constraint firstItem="ZEA-QM-M5h" firstAttribute="trailing" secondItem="QD3-lu-Juf" secondAttribute="trailingMargin" id="LM8-jm-Wna"/>
                                         <constraint firstItem="mlX-7x-Zkz" firstAttribute="top" secondItem="QD3-lu-Juf" secondAttribute="topMargin" id="OAU-zU-eCj"/>
-                                        <constraint firstItem="3D4-m9-yop" firstAttribute="leading" secondItem="QD3-lu-Juf" secondAttribute="leadingMargin" id="Rp4-gH-ut7"/>
-                                        <constraint firstItem="eRg-di-44r" firstAttribute="trailing" secondItem="QD3-lu-Juf" secondAttribute="trailingMargin" id="Ucu-CS-c9m"/>
-                                        <constraint firstItem="3D4-m9-yop" firstAttribute="top" secondItem="ZEA-QM-M5h" secondAttribute="bottom" constant="9" id="chd-e5-QbZ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ZEA-QM-M5h" secondAttribute="trailing" id="duK-vN-Ast"/>
-                                        <constraint firstItem="ZEA-QM-M5h" firstAttribute="leading" secondItem="QD3-lu-Juf" secondAttribute="leadingMargin" id="tBD-xU-86X"/>
+                                        <constraint firstItem="ZEA-QM-M5h" firstAttribute="leading" secondItem="QD3-lu-Juf" secondAttribute="leadingMargin" id="TIH-Yn-Dfx"/>
+                                        <constraint firstItem="ZEA-QM-M5h" firstAttribute="top" secondItem="mlX-7x-Zkz" secondAttribute="bottom" constant="8" id="XHe-Td-2SH"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="eRg-di-44r" secondAttribute="bottom" constant="1" id="hLo-gv-IjU"/>
+                                        <constraint firstItem="eRg-di-44r" firstAttribute="trailing" secondItem="QD3-lu-Juf" secondAttribute="trailingMargin" id="hQB-bS-ae1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3D4-m9-yop" secondAttribute="bottom" constant="13.5" id="pjV-nE-Elz"/>
+                                        <constraint firstItem="3D4-m9-yop" firstAttribute="top" secondItem="ZEA-QM-M5h" secondAttribute="bottom" constant="9" id="tbN-ym-g46"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="digsrcLabel" destination="3D4-m9-yop" id="DJD-OV-or5"/>
-                                    <outlet property="iconView" destination="ZEA-QM-M5h" id="Ieb-PB-A34"/>
+                                    <outlet property="iconView" destination="ZEA-QM-M5h" id="5NX-mx-Apw"/>
                                     <outlet property="replyLabel" destination="eRg-di-44r" id="LYT-hp-Qm3"/>
                                     <outlet property="titleLabel" destination="mlX-7x-Zkz" id="yKS-uB-s3c"/>
                                 </connections>
@@ -192,7 +190,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjR-q1-hOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="176"/>
+            <point key="canvasLocation" x="477" y="94"/>
         </scene>
     </scenes>
 </document>

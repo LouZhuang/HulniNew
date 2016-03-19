@@ -10,4 +10,6 @@
 
 @interface ChannelCell : UICollectionViewCell
 
+@property(nonatomic,strong)NSString * urlString;
+
 @end

@@ -20,7 +20,18 @@
 
 @implementation NewsTableViewController
 
+-(void)setUrlString:(NSString *)urlString{
 
+    _urlString = urlString;
+
+    // __weak typeof(self) weakSelf = self;
+    [News loadNewsListWithString:urlString finished:^(NSArray *newsList) {
+        _newsList = newsList;
+        
+        [self.tableView reloadData];
+    }];
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,12 +39,6 @@
     //计算行高
     self.tableView.estimatedRowHeight = 80;
     self.tableView.rowHeight  = UITableViewAutomaticDimension;
-   // __weak typeof(self) weakSelf = self;
-  [News loadNewsListWithString:@"T1348649079062/0-20.html"finished:^(NSArray *newsList) {
-      _newsList = newsList;
-      
-      [self.tableView reloadData];
-  }];
     
     
 }
@@ -61,7 +66,8 @@
     NSString *ID = [NewsCell cellIndefiner:n];
     
     
-    NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+   NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+   
     
     cell.news = n;
     

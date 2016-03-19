@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "Channel.h"
 #import "ChannelLabel.h"
+#import "ChannelCell.h"
 
 @interface HomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property(nonatomic,strong)NSArray * channelList;
@@ -54,10 +55,12 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ChannelCell" forIndexPath:indexPath];
+    ChannelCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ChannelCell" forIndexPath:indexPath];
   //  cell.backgroundColor = [UIColor redColor];
     
+    cell.urlString = [self.channelList[indexPath.item] urlString];
     
+    NSLog(@"%@",cell.urlString);
     return cell;
 
 }
