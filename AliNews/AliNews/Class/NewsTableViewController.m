@@ -10,27 +10,34 @@
 #import "News.h"
 #import "NewsCell.h"
 
-@interface NewsTableViewController (){
+@interface NewsTableViewController ()
 
-    NSArray *_newsList;
-}
-
-
+@property(nonatomic,strong) NSArray *newsList;
 @end
 
 @implementation NewsTableViewController
 
+-(void)setNewsList:(NSArray *)newsList{
+
+    _newsList = newsList;
+    
+    [self.tableView reloadData];
+ 
+
+
+}
+
 -(void)setUrlString:(NSString *)urlString{
+    
+    self.newsList = nil;
 
     _urlString = urlString;
 
-    // __weak typeof(self) weakSelf = self;
     [News loadNewsListWithString:urlString finished:^(NSArray *newsList) {
-        _newsList = newsList;
-        
-        [self.tableView reloadData];
-    }];
-
+         __weak typeof(self) weakSelf = self;
+       
+        weakSelf.newsList = newsList;
+ }];
 }
 
 - (void)viewDidLoad {
@@ -55,13 +62,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
    
 
-    return _newsList.count;
+    return self.newsList.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    News * n = _newsList[indexPath.row];
+    News * n = self.newsList[indexPath.row];
     
     NSString *ID = [NewsCell cellIndefiner:n];
     

@@ -29,12 +29,14 @@
     self.titleLabel.text = news.title;
     self.digsrcLabel.text = news.digest;
     self.replyLabel.text = [NSString stringWithFormat:@"%d",news.replyCount];
+    self.iconView.image = nil;//清空缓存
     [self.iconView setYy_imageURL:[NSURL URLWithString:news.imgsrc]];
     
     if (news.imgextra.count == 2) {
         int index = 0;
         for (UIImageView *iv in self.imageExtras) {
            
+            iv.image = nil;//清空缓存
             [iv setYy_imageURL:[NSURL URLWithString:news.imgextra[index][@"imgsrc"]]];
             index++;
         }

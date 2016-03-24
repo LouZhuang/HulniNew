@@ -8,8 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol  ChannelLabelDelegate;
+
+
+
 @interface ChannelLabel : UILabel
 
 +(instancetype )labelWithTitle:(NSString *)titlle;
+
+@property(nonatomic,weak)id<ChannelLabelDelegate>delegate;
+
+@property(nonatomic,assign)float scale;
+
+@end
+
+@protocol ChannelLabelDelegate <NSObject>
+
+
+
+-(void)scaleChannelLabel:(ChannelLabel *)label;
 
 @end
