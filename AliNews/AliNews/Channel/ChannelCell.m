@@ -11,8 +11,7 @@
 
 @interface ChannelCell (){
 
-  //这句是为了显示 图像， 如果不用成员变量去记录，那么在awakeFromNib中 创建的对象出了“}”会释放
-    NewsTableViewController * _newsVc;
+       NewsTableViewController * _newsVc;
 }
 
 

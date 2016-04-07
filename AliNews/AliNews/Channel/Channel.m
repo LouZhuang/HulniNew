@@ -10,11 +10,8 @@
 #import "NSObject+Extension.h"
 
 @implementation Channel
-//重写setter 方法，意味着对象的引用处理，全部由程序员接管
-//重写copy 属性的时候，一定要在后面写copy
 -(void)setTid:(NSString *)tid{
-//如果不使用copy,外面的copy就白写了
-// 设置数值的时候，tid 属性只是一个strong,而不是copy
+
     _tid = tid.copy;
     
     _urlString = [NSString stringWithFormat:@"%@/0-20.html",tid];

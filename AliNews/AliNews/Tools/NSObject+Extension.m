@@ -40,19 +40,19 @@ const char * kHulni = "kHulni";
 
     unsigned int count;
 
-  objc_property_t *list = class_copyPropertyList([self class], &count);
-
+    objc_property_t *list = class_copyPropertyList([self class], &count);
+    
     //可变数组
     NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:count];
-
+    
     for (unsigned int i = 0; i<count; i++) {
-
+        
         objc_property_t pty = list[i];
-
+        
         //获取属相名称
-
+        
         const char * cName = property_getName(pty);
-
+        
         [arrayM addObject:[NSString stringWithUTF8String:cName]];
     }
 

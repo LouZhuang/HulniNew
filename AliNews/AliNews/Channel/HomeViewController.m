@@ -86,7 +86,7 @@
     //当前选中的标签
     ChannelLabel *currentLabel = self.scrollView.subviews[self.currentIndex];
 
- //   NSLog(@"%@",currentLabel.text);
+    //   NSLog(@"%@",currentLabel.text);
     //一个户型 就是返回数组 里面装的是可以滑动的cell的item
     NSArray *indexPaths = [self.collectionView indexPathsForVisibleItems];
     //遍历数组 确定第二个标签
